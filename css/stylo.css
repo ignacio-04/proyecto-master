@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: p;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+body{
+    background-color: #274575;
+}
+.contenedor{
+    display: none;
+}
+.conteiner{
+    height: 100%;
+    background-color: #0b192f;
+}
+.nav-dos ul{
+    list-style: none;
+    padding-left: 15px;
+    text-align: end;
+    padding-right: 10px;
+}
+.nav-dos ul li{
+    color: white;
+    font-size: 22px;
+    display: inline block;
+}
+.nav-dos ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.nav-dos ul li:active{
+    display: inline;
+    background-color: rgb(0, 0, 248);
+    font-weight: bold;
+}
+
+.cilindro{
+    background-color: #0b192f;
+    margin-top: -7px;
+}
+
+
+main{
+    background-color:  #1d355a;
+}
+main h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 22px;
+}
+section img{
+    width: 100%;
+}
+footer{
+    text-align: center;
+    font-size: 23px;
+    padding: 22px;
+}
+@media screen and (min-width:800px){
+    .contenedor{
+        display: block;
+        height: 170px;
+    }
+     .conteiner{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-top: 45px;
+    }
+    .escudo-racing{
+        position: absolute;
+    }
+   header .nav-uno ul{
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    font-size: 23px;
+    color: black;
+   }
+   header .nav-uno ul li a{
+    text-decoration: none;
+    color: black;
+   }
+   header .nav-uno ul li:hover{
+    background-color:white ;
+   }
+   .racing{
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+   }
+   header{
+    grid-area: header;
+   }
+   main{
+    grid-area: main;
+   }
+   section{
+    grid-area: section;
+   }
+   footer{
+    grid-area: footer;
+   }
+}
+.historia-none{
+    display: none;
+}
+header .historia ul{
+    list-style: none;
+    background-color: #0b192f;
+}
+header .historia ul li{
+    color: white;
+}
+header .historia ul li a{
+    color: white;
+    text-decoration: none;
+}
+    .campeonatos-racing{
+        display: flex;
+        flex-direction: column;
+    }
+    .campeones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .campeonatos-racing p{
+        font-size: 25px;
+    }
+    .footer-historia{
+        background-color: #0b192f;
+    }
+    @media screen and (min-width: 800px){
+        .color-body{
+            background-color: #0b192f;
+            height: 100vh;
+        }
+        header .historia-none{
+            display: block;
+        }
+        header .historia-yes{
+            display: none;
+        }
+        header h1{
+            display: flex;
+            padding-bottom: 30px;
+            color: black;
+            font-size: 40px;
+        }
+        header .historia ul{
+            display: flex;
+            gap: 6px;
+            list-style: none;
+            font-size: 23px;
+            padding-bottom: 20px;
+        }
+        header .historia ul li{
+            color: black;
+        }
+        header .historia ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        header .historia ul li:hover{
+            background-color: white;
+    
+        }
+        header .historia ul li a:hover{
+            background-color: white;
+        }
+        .campeonatos-racing h2{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        .campeones{
+            background-color: #1d355a;
+            display: grid;
+            grid-template-columns: ;
+            grid-template-rows: ;
+            grid-template-areas: 
+            "racing-consecutivo racing-tricampeon"
+            "racing-mundial racing-supercopa" 
+            "racing-positivo racing-positivo";
+            justify-items: center;
+            
+        }
+        .campeones .racing-consecutivo{
+            grid-area: racing-consecutivo;
+        }
+        .campeones .racing-tricampeon{
+            grid-area: racing-tricampeon;
+        }
+        .campeones .racing-mundial{
+            grid-area: racing-mundial;
+        }
+        .campeones .racing-supercopa{
+            grid-area: racing-supercopa;
+        }
+        .campeones .racing-positivo{
+            grid-area: racing-positivo;
+        }
+        
+        }
+.hdos-idolos{
+    display: none;
+}
+.idolos{
+    background-color: #1d355a;
+}
+.header-idolos{
+    background-color: #0b192f;
+}
+.huno-idolos{
+    font-size: 50px;
+    text-align:center;
+}
+.idolos-nav ul{
+}
+.idolos-nav ul li{
+    list-style: none;
+}
+.idolos-nav ul li a{
+    color: white;
+    text-decoration: none;
+    right: 30px !important;
+
+}
+.section-idolos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-idolos p{
+    color: white;
+    margin-top: 15px;
+}
+.section-idolos img{
+    width: 50%;
+    margin-bottom: 5px;
+}
+.idolos footer{
+    background-color: #050c16;
+}
+@media screen and (min-width: 800px){
+    .huno-idolos{
+        display: none;
+    }
+    .header-idolos{
+        display: flex;
+        align-items: center;
+    }
+
+    .hdos-idolos{
+        display: block;
+        font-size: 45px;
+    }
+    .idolos-nav ul{
+        display: flex;
+        gap: 5px;
+        font-size: 22px;
+    }
+    .idolos-nav ul li a{
+        color: black;
+    }
+    .idolos-nav ul li a:hover{
+        background-color: white;
+    }
+
+ 
+}
+.header-dt .nav-dt a{
+    color: white;
+    background-color: #0b192f;
+} 
+.dt-si{
+    display: none;
+}
+.footer-dt{
+    padding-top: 80px;
+    background-color: #0b192f;
+    height: 220px;
+}
+
+@media screen and (min-width: 800px){
+    .dt-no{
+        display: none;
+    }
+    
+    .dt-si{
+        display: block;
+    }
+    .header-dt{
+        background-color: #0b192f;
+        justify-content: space-around;
+    }
+    .ul-dt{
+        position: absolute;
+        top: 45px;
+        right: 150px;
+    }
+    .dt-si{
+        justify-items: center;
+        
+    }
+    .dts-si{
+        position: relative;
+        right: 225px;
+    }
+    .ul-dt li a{
+        color: black;
+        font-size: 20px;
+        top: 60px;
+    }
+    .ul-dt li a:hover{
+        background-color: white;
+        color: black;
+    }
+    .footer-dt{
+        padding-top: 95px;
+        background-color: #0b192f;
+    }
+    .footer-dt h2{
+        position: relative;
+        bottom: 20px;
+        color: #050c16;
+    }
+}
+.rivalidades-dos{
+display: none;
+}
+.rivalidades{
+    background-color: #0b192f;
+
+}
+    .hache-uno{
+        display: none;
+    }
+    .nav-rivalidades ul{
+        list-style: none;
+    }.nav-rivalidades ul li a{
+        color: white;
+        text-decoration: white;
+    }
+    .hache-dos{
+        background-color: #274575;
+    }
+    .div-rivalidades{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-rivalidades{
+        background-color: #0b192f;
+    }
+    @media screen and (min-width:800px){
+    .div-rivalidades{
+        display: none;
+    }
+    .hache-dos{
+        display: none;
+    }
+    .hache-uno{
+        display: block;
+        position: relative;
+        top: 10px;
+    }
+    header .nav-rivalidades ul{
+    }
+    .nav-rivalidades ul{
+        display: flex;
+        gap: 5px;
+        font-size: 23px;
+    }
+    .nav-rivalidades ul li a{
+        color: black;
+    }
+    .nav-rivalidades ul li a:hover{
+        background-color: white;
+    }
+    .rivalidades-dos{
+        height: 450px;
+        background-color: ;
+        display: block;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+    .boca{
+        background-color: #274575;
+    }
+    .boca h4{
+        text-align: center;
+    }
+    .boca img{
+        position: relative;
+        left: 120px;
+    }
+    .boca p{
+        text-align: center;
+    }
+    .river{
+        background-color: #274575;
+    }
+    .river h4{
+        text-align: center;
+    }
+    .river img{
+        position: relative;
+        left: 55px;
+    }
+    .river p{
+        text-align: center;
+    }
+    .independiente{
+        background-color: #274575;
+    }
+    .independiente h4{
+        text-align: center;
+    }
+    .independiente img{
+        position: relative;
+        left: 124px;
+    }
+    .independiente p{
+        text-align: center;
+    }
+    .sanlorenzo{
+        background-color: #274575;
+    }
+    .sanlorenzo h4{
+        text-align: center;
+    }
+    .sanlorenzo img{
+        position: relative;
+        left: 85px;
+    }
+    .sanlorenzo p{
+        text-align: center;
+    }
+    .footer-rivalidades{
+        height: 90px;
+    }
+    .footer-rivalidades h5{
+        position: relative;
+        top: 13px;
+    }
+}
